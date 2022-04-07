@@ -1,0 +1,16 @@
+.strong--shelfTitle{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 700;
+
+}
+.container--subtitle{
+    display: flex;
+    justify-content: center;
+}
+.paragraph--subtitle{
+   margin-top: -10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+}

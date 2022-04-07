@@ -1,0 +1,6 @@
+.flexRowContent--Home-slide1 :global(.vtex-slider-layout-0-x-caretIcon--carousel){
+    color: white;
+}
+.flexRowContent--Home-slide1{
+    margin-bottom: 50px;
+}

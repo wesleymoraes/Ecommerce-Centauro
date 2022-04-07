@@ -1,11 +1,23 @@
 {
-  "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
-    ]
+  "flex-layout.row#3-desktop":{
+    "props": {
+      "blockClass": "Row-menu"
+    },
+"children": [
+  "menu-item#esportes",
+  "menu-item#homens",
+  "menu-item#mulheres",
+  "menu-item#criancas",
+  "menu-item#calcados",
+  "menu-item#roupas",
+  "menu-item#acessorios",
+  "menu-item#marcas",
+  "menu-item#bicicleta",
+  "menu-item#futebol",
+  "menu-item#outlet"
+]
   },
-  "menu-item#shop": {
+  "menu-item#esportes": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -15,17 +27,17 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "ESPORTES",
+        "text": "ESPORTES"
       }
     }
   },
   "vtex.menu@2.x:menu#institutional": {
     "children": [
-      "menu-item#vtex-website"
+      "menu-item#homens"
     ]
   },
-  "menu-item#vtex-website": {
+  "menu-item#homens": {
     "props": {
       "id": "menu-item-vtex-website",
       "type": "custom",
@@ -35,8 +47,189 @@
         "type": "external",
         "href": "http://vtex.com",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "homens",
+        "text": "HOMENS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#mulheres": {
+    "children": [
+      "menu-item#mulheres"
+    ]
+  },
+  "menu-item#mulheres": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "homens",
+        "text": "MULHERES"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#criancas": {
+    "children": [
+      "menu-item#criancas"
+    ]
+  },
+  "menu-item#criancas": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "criancas",
+        "text": "CRIANÇAS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#calcados": {
+    "children": [
+      "menu-item#calcados"
+    ]
+  },
+  "menu-item#calcados": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "criancas",
+        "text": "CALÇADOS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#roupas": {
+    "children": [
+      "menu-item#roupas"
+    ]
+  },
+  "menu-item#roupas": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "roupas",
+        "text": "ROUPAS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#acessorios": {
+    "children": [
+      "menu-item#acessorios"
+    ]
+  },
+  "menu-item#acessorios": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "acessorios",
+        "text": "ACESSÓRIOS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#marcas": {
+    "children": [
+      "menu-item#marcas"
+    ]
+  },
+  "menu-item#marcas": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "criancas",
+        "text": "MARCAS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#bicicleta": {
+    "children": [
+      "menu-item#bicicleta"
+    ]
+  },
+  "menu-item#bicicleta": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "criancas",
+        "text": "BICICLETA"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#futebol": {
+    "children": [
+      "menu-item#futebol"
+    ]
+  },
+  "menu-item#futebol": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "futebol",
+        "text": "FUTEBOL"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#outlet": {
+    "children": [
+      "menu-item#outlet"
+    ]
+  },
+  "menu-item#outlet": {
+    "props": {
+    "blockClass": ["outlet"],
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "criancas",
+        "text": "OUTLET"
       }
     }
   }

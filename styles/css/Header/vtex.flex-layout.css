@@ -1,0 +1,64 @@
+.flexRow--Row-1{
+    background: rgb(167, 14, 19);
+}
+.flexRow--Top-Bar{
+    height: 40px;
+    width: 100%;
+}
+.flexRowContent--Top-Bar{
+  padding-top: 15px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.flexRowContent--topbarRight{
+    display: flex;
+    justify-content: flex-end;
+}
+.flexRowContent--Top-Bar :global(.vtex-menu-2-x-styledLinkContent){
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+}
+.flexRowContent--menu-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexColChild--1-main-header :global(.vtex-store-components-3-x-searchBarContainer){
+    border: 0px;
+    width: 600px;
+}
+.flexColChild--1-main-header :global(.vtex-store-components-3-x-searchBarIcon--search){
+    display: none;
+}
+.flexCol--3-main-header{
+    flex-direction: row;
+    align-items: center;
+
+}
+.flexColChild--3-main-header :global(.vtex-minicart-2-x-minicartIconContainer), :global(.vtex-login-2-x-profileIcon){
+    color: white;
+}
+.flexRowContent--Row-menu{
+height: 40px;
+align-items: center;
+border-bottom: 2px gray;
+}
+.flexRow--Row-menu :global(.vtex-menu-2-x-styledLinkContent){
+    -webkit-box-align: center;
+    padding: 0px 13px 0px 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(135, 135, 135);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    z-index: 14;
+
+}
+.flexRow--Row-menu :global(.vtex-menu-2-x-styledLinkContent--outlet){
+    color: rgb(245, 4, 4)
+}

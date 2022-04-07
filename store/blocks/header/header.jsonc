@@ -10,29 +10,76 @@
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#4-desktop"
+
     ]
   },
-
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
     "props": {
-      "fullWidth": true
-    }
-  },
 
+      "blockClass": "Row-1"
+    },
+   "children": ["flex-layout.row#top-bar"]
+  },
+  "flex-layout.row#top-bar":{
+    "props": {
+    "blockClass": "Top-Bar"
+  },
+   "children": ["flex-layout.row#rowLeft", "flex-layout.row#rowRight"]
+  },
+  "flex-layout.row#rowLeft":{
+    "props": {
+      "blockClass": "TopBarLeft"
+    },
+    "children": ["menu-item#trocanaloja","menu-item#cartaopresente","menu-item#sejamembro"]
+  },
+ "menu-item#trocanaloja": {
+   "props": {
+    "blockClass": ["menuTopBar"],
+     "type": "custom",
+     "text": "TROCA NA LOJA E NO SITE >"
+   }
+
+ },
+ "menu-item#cartaopresente": {
+  "props": {
+    "blockClass": ["menuTopBar"],
+    "type": "custom",
+    "text": "CARTÃO PRESENTE >"
+  }
+
+},
+"menu-item#sejamembro": {
+  "props": {
+    "blockClass": ["menuTopBar"],
+    "type": "custom",
+    "text": "SEJA MEMBRO MOVE >"
+  }
+
+},
+  "flex-layout.row#rowRight":{
+    "props": {
+      "blockClass": "topbarRight"
+    },
+  "children": ["menu-item#atendimento","menu-item#solucoesparaempresa"]
+  },
+  "menu-item#atendimento":{
+    "props": {
+      "blockClass": ["menuTopBar"],
+      "type": "custom",
+      "text": "Atendimento"
+    }
+  },
+  "menu-item#solucoesparaempresa":{
+    "props": {
+      "blockClass": ["menuTopBar"],
+      "type": "custom",
+      "text": "Soluções para empresas"
+    }
+
+
+  },
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
-  "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
       "horizontalAlign": "center",
@@ -41,61 +88,105 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "flex-layout.col#1-main-header",
+      "flex-layout.col#2-main-header",
+      "flex-layout.col#3-main-header"
+  ]
+},
+"flex-layout.col#1-main-header":{
+  "props":{
+      "blockClass":"1-main-header",
+      "width":"50%"
+  },
+  "children":[
+      "search-bar"
+  ]
+},
+"flex-layout.col#2-main-header":{
+  "props":{
+      "blockClass":"2-main-header",
+      "width":"20%"
+  },
+  "children":[
+    "menu-item#entreoucadastrese",
+    "menu-item#meuspedidos"
+  ]
+},
+"flex-layout.col#3-main-header":{
+  "props":{
+      "blockClass":"3-main-header",
+      "width":"10%"
+  },
+  "children":[
       "login",
       "minicart.v2"
-    ]
+  ]
+},
+"flex-layout.col#logo-desktop": {
+  "props": {
+      "blockClass":"col-logo",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+       "width":"20%"
   },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
+  "children": [
+      "logo#desktop"
+  ]
+},
+"menu-item#entreoucadastrese": {
+ "props": {
+   "type": "custom",
+   "text": "Entre ou cadastre-se"
+ }
   },
-  "flex-layout.col#category-menu": {
+  "menu-item#meuspedidos": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
-  "logo#desktop": {
-    "props": {
+      "type": "custom",
+      "text": "Meus pedidos"
+    }
+     },
+"logo#desktop": {
+  "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://spacentauro-a.akamaihd.net/assets/logo-centauro-header2.0.svg",
+      "width": "200px"
+  }
+},
+"login": {
+  "props": {
+      "hideIconLabel": true,
+      "showIconProfile": true
+  }
+},
+"search-bar": {
+  "props": {
+      "placeholder": "O que você procura?"
+      
+  }
+},
+"flex-layout.row#4-desktop": {
+"children": ["image#banner-header"]
+},
+"image#banner-header": {
+    "props": {
+      "src": "https://imgcentauro-a.akamaihd.net//05_Campanhas/2022/RetireGratis/Banners/desk-multicanalidade.jpg"
     }
   },
+
+
+
+
+
+
+
+
+
+
+
+
+  //------------------------------mobile---------------------------//
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
@@ -106,7 +197,6 @@
     "children": [
       "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],

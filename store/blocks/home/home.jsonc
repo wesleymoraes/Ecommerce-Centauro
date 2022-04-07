@@ -1,12 +1,11 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#home-1",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
       "rich-text#shelf-title",
+      "rich-text#subtitle",
+      "flex-layout.row#home-2",
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
@@ -14,19 +13,29 @@
       "newsletter"
     ]
   },
-
+"flex-layout.row#home-1": {
+  "props": {
+    "blockClass": "Home-slide1"
+  },
+  "children": ["list-context.image-list#demo"]
+},
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
+      
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/CelebrandoNike/desk.jpg",
+          "mobileImage": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/CelebrandoNike/desk.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/AniversarioCentauro/Homes/desk-primaria-02_v2.jpg",
+          "mobileImage": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/AniversarioCentauro/Homes/desk-primaria-02_v2.jpg"
+        },
+        {
+          "image":"https://imgcentauro-a.akamaihd.net/08_Lancamentos/2022/Rainha/Rainha-R7/desk-primaria-01.jpg",
+            "src":"https://imgcentauro-a.akamaihd.net/08_Lancamentos/2022/Rainha/Rainha-R7/desk-primaria-01.jpg"
         }
       ]
     }
@@ -46,10 +55,51 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "**Ofertas de aniversário**",
       "blockClass": "shelfTitle"
     }
   },
+  "rich-text#subtitle":{
+    "props": {
+      "text": "Todo dia um desconto para a festa ficar completa",
+      "blockClass":"subtitle"
+    }
+  },
+  "flex-layout.row#home-2":{
+    "props": {
+      "blockClass": "Home-slide1"
+    },
+    "children": ["list-context.image-list#slider2"]
+  },
+    "list-context.image-list#slider2": {
+      "children": ["slider-layout#slide2"],
+      "props": {
+        
+        "height": 720,
+        "images": [
+          {
+            "image": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/OfertasDiarias/04-Abril/20220406/od2-desk.jpg",
+            "mobileImage": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/OfertasDiarias/04-Abril/20220406/od2-desk.jpg"
+          },
+          {
+            "image": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/OfertasDiarias/04-Abril/20220406/od1-desk.jpg",
+            "mobileImage": "https://imgcentauro-a.akamaihd.net/05_Campanhas/2022/OfertasDiarias/04-Abril/20220406/od1-desk.jpg"
+          }
+        ]
+      }
+    },
+    "slider-layout#slide2": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      }
+    },
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -67,6 +117,7 @@
         "tablet": 3,
         "phone": 1
       },
+      "autoplay": {"timeout": "0.5ms"},
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
