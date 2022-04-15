@@ -19,9 +19,9 @@
   },
   "menu-item#esportes": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-shop",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -39,9 +39,9 @@
   },
   "menu-item#homens": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -59,9 +59,9 @@
   },
   "menu-item#mulheres": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -79,9 +79,9 @@
   },
   "menu-item#criancas": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -99,9 +99,9 @@
   },
   "menu-item#calcados": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -119,9 +119,9 @@
   },
   "menu-item#roupas": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -139,9 +139,9 @@
   },
   "menu-item#acessorios": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -159,9 +159,9 @@
   },
   "menu-item#marcas": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -179,9 +179,9 @@
   },
   "menu-item#bicicleta": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -199,9 +199,9 @@
   },
   "menu-item#futebol": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
@@ -219,10 +219,10 @@
   },
   "menu-item#outlet": {
     "props": {
+      "blockClass": ["Menu-departamentos"],
     "blockClass": ["outlet"],
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",

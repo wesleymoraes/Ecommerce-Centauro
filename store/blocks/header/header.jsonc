@@ -25,7 +25,7 @@
     "props": {
     "blockClass": "Top-Bar"
   },
-   "children": ["flex-layout.row#rowLeft", "flex-layout.row#rowRight"]
+   "children": ["flex-layout.row#rowLeft", "flex-layout.row#col-space","flex-layout.row#rowRight"]
   },
   "flex-layout.row#rowLeft":{
     "props": {
@@ -57,6 +57,11 @@
   }
 
 },
+"flex-layout.row#col-space": {
+"props": {
+ "blockClass": "col-space"
+}
+},
   "flex-layout.row#rowRight":{
     "props": {
       "blockClass": "topbarRight"
@@ -65,14 +70,14 @@
   },
   "menu-item#atendimento":{
     "props": {
-      "blockClass": ["menuTopBar"],
+      "blockClass": ["menuTopBar-atendimento"],
       "type": "custom",
       "text": "Atendimento"
     }
   },
   "menu-item#solucoesparaempresa":{
     "props": {
-      "blockClass": ["menuTopBar"],
+      "blockClass": ["menuTopBar-soluções"],
       "type": "custom",
       "text": "Soluções para empresas"
     }
@@ -105,7 +110,7 @@
 },
 "flex-layout.col#2-main-header":{
   "props":{
-      "blockClass":"2-main-header",
+      "blockClass":"EntreOuCadastresse",
       "width":"20%"
   },
   "children":[
@@ -127,8 +132,8 @@
   "props": {
       "blockClass":"col-logo",
       "verticalAlign": "middle",
-      "horizontalAlign": "left",
-       "width":"20%"
+      "horizontalAlign": "left"
+      
   },
   "children": [
       "logo#desktop"
@@ -162,7 +167,7 @@
 },
 "search-bar": {
   "props": {
-      "placeholder": "O que você procura?"
+      "placeholder": "O que você procura? :)"
       
   }
 },

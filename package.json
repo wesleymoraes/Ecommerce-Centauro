@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@faststore/ui": "^1.7.22",
+    "@vtex/theme-b2c-tailwind": "^1.7.22"
+  }
+}

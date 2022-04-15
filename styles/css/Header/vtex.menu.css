@@ -1,0 +1,11 @@
+.styledLinkContent--Menu-departamentos{
+    font-weight: bolder;
+}
+
+.styledLinkContent--Menu-departamentos:hover{
+    color: red;
+ 
+}
+.styledLinkContainer--menuTopBar-atendimento{
+    width: 90%;
+}

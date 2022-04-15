@@ -1,0 +1,9 @@
+.searchBarInnerContainer{
+    margin-left: -100px;
+    width: 750px;
+}
+.flexCol--1-main-header :global(.vtex-store-components-3-x-searchBarContainer){
+    background-color: black;
+    height: 48px;
+    border: 0px;
+}

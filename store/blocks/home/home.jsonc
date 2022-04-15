@@ -7,7 +7,6 @@
       "rich-text#subtitle",
       "flex-layout.row#home-2",
       "flex-layout.row#shelf",
-      "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -101,6 +100,9 @@
       }
     },
   "flex-layout.row#shelf": {
+    "props": {
+      "blockClass": "ShelfProduct"
+    },
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
@@ -113,12 +115,11 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 6,
         "tablet": 3,
         "phone": 1
       },
-      "autoplay": {"timeout": "0.5ms"},
-      "infinite": true,
+      "infinite": false,
       "fullWidth": false,
       "blockClass": "shelf"
     }
@@ -129,7 +130,7 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "https://static-wishlist.s3.amazonaws.com/prd/onsit…1571db6/1dda39f4-72dc-9932-82c8-21dbf69d120d.jpeg",
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",

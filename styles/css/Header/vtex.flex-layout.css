@@ -5,10 +5,22 @@
     height: 40px;
     width: 100%;
 }
+.flexRowContent--TopBarLeft{
+    margin-left: 70px;
+    width: 115%;
+}
+
+.flexCol--col-logo{
+    margin-right: 50px;
+    width: 260px;
+}
 .flexRowContent--Top-Bar{
   padding-top: 15px;
     font-size: 12px;
     color: rgb(255, 255, 255);
+}
+.flexCol--1-main-header{
+    padding-right: 90px;
 }
 .flexRowContent--topbarRight{
     display: flex;
@@ -21,7 +33,7 @@
 .flexRowContent--menu-link{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 86px;
 }
 .flexColChild--1-main-header :global(.vtex-store-components-3-x-searchBarContainer){
     border: 0px;
@@ -42,6 +54,14 @@
 height: 40px;
 align-items: center;
 border-bottom: 2px gray;
+
+}
+.flexRowContent--Row-menu:hover{
+    color: red;
+
+}
+.flexRow--Row-menu{
+    border-bottom: 1px solid #e7e1e1;
 }
 .flexRow--Row-menu :global(.vtex-menu-2-x-styledLinkContent){
     -webkit-box-align: center;
@@ -54,11 +74,21 @@ border-bottom: 2px gray;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     position: relative;
     z-index: 14;
 
 }
 .flexRow--Row-menu :global(.vtex-menu-2-x-styledLinkContent--outlet){
     color: rgb(245, 4, 4)
+}
+
+.flexColChild--1-main-header :global(.vtex-input-prefix__group){
+    border: 0px;
+}
+.flexColChild--1-main-header :global(.vtex-store-components-3-x-autoCompleteOuterContainer){
+    padding-left: 40px;
+}
+.flexRowContent--ShelfProduct:global(.vtex-button__label){
+    display: none;
 }
